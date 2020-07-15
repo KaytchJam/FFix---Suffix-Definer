@@ -10,9 +10,15 @@ Sorts the words via:
 
 Popup Functionality
 - 
+- Input Dialog Box
+- Event Listener Button
+- Sort Terms
 
 Page Action Functionality [ IN PROGRESS ]
 -
+- Highlighted words will display a "Display Suffix" window
+- Will connect to popup and enter suffix
 
-Suffix Definition Finished Amount [ 17 / 26 ] 
-= ~ [ 65% ]
+Suffix Definition Finished Amount 
+-
+- (17 / 26) or ~ 65%
