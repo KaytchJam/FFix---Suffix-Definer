@@ -13,54 +13,54 @@ Sorts the words via:
 # Page Action Functionality [ IN PROGRESS ]
 
 # Suffix Definition Finished Amount [ IN PROGRESS ]
-> a [x]
+a [x]
 
-> b [x]
+b [x]
 
-> c [x]
+c [x]
 
-> d [x]
+d [x]
 
-> e [x]
+e [x]
 
-> f [x]
+f [x]
 
-> g [x]
+g [x]
 
-> h [x]
+h [x]
 
-> i [x]
+i [x]
 
-> j [x]
+j [x]
 
-> k [x]
+k [x]
 
-> l [x]
+l [x]
 
-> m [x]
+m [x]
 
-> n [x]
+n [x]
 
-> o [x]
+o [x]
 
-> p [x]
+p [x]
 
-> q [x] (NO SUFFIXES)
+q [x] (NO SUFFIXES)
 
-> r []
+r []
 
-> s []
+s []
 
-> t []
+t []
 
-> u []
+u []
 
-> v []
+v []
 
-> w []
+w []
 
-> x []
+x []
 
-> y []
+y []
 
-> z []
+z []
