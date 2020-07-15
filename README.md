@@ -8,59 +8,11 @@ Sorts the words via:
 - Suffix Name Length
 - Definition Size / Depth
 
-# Popup Functionality
+Popup Functionality
+- 
 
-# Page Action Functionality [ IN PROGRESS ]
+Page Action Functionality [ IN PROGRESS ]
+-
 
-# Suffix Definition Finished Amount [ IN PROGRESS ]
-a [x]
-
-b [x]
-
-c [x]
-
-d [x]
-
-e [x]
-
-f [x]
-
-g [x]
-
-h [x]
-
-i [x]
-
-j [x]
-
-k [x]
-
-l [x]
-
-m [x]
-
-n [x]
-
-o [x]
-
-p [x]
-
-q [x] (NO SUFFIXES)
-
-r []
-
-s []
-
-t []
-
-u []
-
-v []
-
-w []
-
-x []
-
-y []
-
-z []
+Suffix Definition Finished Amount [ 17 / 26 ] 
+= ~ [ 65% ]
