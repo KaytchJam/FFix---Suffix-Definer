@@ -1,4 +1,4 @@
-# Fixx: Suffix-Definer
+# FFix: Suffix-Definer
 A simple chrome extension that finds and *defines the suffix of a word entered*.
 All suffixes are *divided alphabetically,* from A to Z. 
 
