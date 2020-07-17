@@ -17,4 +17,4 @@ Sort suffixes via:
 - Essentially another method of inputting a definition into the "Pop Up" window
 
 ## Suffix Definition Finished Amount 
-- (17 / 26) or ~ **65%**
+- (25 / 25) or ~ **100%**
