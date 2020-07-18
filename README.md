@@ -12,9 +12,5 @@ Sort suffixes via:
   - Suffix name length
   - Definition size / depth
 
-### Page Action Functionality [ IN PROGRESS ]
-- **Highlighted words** on any page will display an additional "Display Suffix" window
-- Essentially another method of inputting a definition into the "Pop Up" window
-
 ### Suffix Definition Finished Amount 
 - (25 / 25) or ~ **100%**
