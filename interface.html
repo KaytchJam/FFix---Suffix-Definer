@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <link rel="stylesheet" href="decor.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <main class="enterable">
+        <form class="mon-forme">
+            <input type="text" class="affix-input" placeholder="Enter a word" maxlength="45" required>
+            <button type="submit" class="affix-button"><span><b>Define</b></span></button>
+        </form>
+        <div class="sort-options"> 
+          <label>Sort by</label>
+          <input id="sort-alpha" type="radio" value=1 name="sort-type" checked="true">Alphabet</input>
+          <input id="sort-length" type="radio" value=0 name="sort-type">Length</input>
+          <input id="sort-depth" type="radio" value=2 name="sort-type">Depth</input>
+        </div>
+      </main>
+        <div class="output-definitions" id="output-space">
+        </div>
+        <script src="suffix.js"></script>
+        <footer>
+          <img src="FFix_LogoType_48.png" alt="FFix Logo" id="ffix-logo">
+          <a class="bottom-links" href="https://en.wiktionary.org/w/index.php?title=Category:English_suffixes&pageuntil=ERGY%0A-ergy#mw-pages" target="_blank">All terms from Wiktionary</a>
+          <a class="bottom-links">~</a> 
+          <a class="bottom-links" href="https://github.com/KaytchJam" target="_blank">Developed by KJam</a>
+          </footer>
+    </body>
+  </html>
