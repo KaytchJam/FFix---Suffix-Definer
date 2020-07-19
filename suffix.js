@@ -93,7 +93,7 @@ function sortBy(val) {
     }
 }
 
-//Finds which "sort" option is seleced
+//Finds which "sort" option is selected
 function checkSort() {
     for (var i = 0; i < sortInputs.length; i++) {
         if (sortInputs[i].checked) { return sortInputs[i].value; }
