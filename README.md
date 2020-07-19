@@ -1,5 +1,5 @@
 # FFix: Suffix-Definer
-A simple chrome extension that finds and *defines the suffix of a word entered*.
+A simple chrome extension that finds all suffixes inside a word and *defines said suffixes.**
 All suffixes are *divided alphabetically,* from A to Z. 
 
 **Suffix definitions** taken from [Wiktionary](https://en.wiktionary.org/w/index.php?title=Category:English_suffixes&pageuntil=ERGY%0A-ergy#mw-pages).
