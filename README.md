@@ -4,6 +4,9 @@ All suffixes are *divided alphabetically,* from A to Z.
 
 **Suffix definitions** taken from [Wiktionary](https://en.wiktionary.org/w/index.php?title=Category:English_suffixes&pageuntil=ERGY%0A-ergy#mw-pages).
 
+Get the extension here: 
+[Chrome Store Link]{https://chrome.google.com/webstore/detail/ffix-english-suffix-dicti/jbojoemigabakpmpiflffmcceknbidhk/related?hl=en&authuser=0}
+
 ### Popup Functionality
 Input a word and all suffixes contained are listed.
 
