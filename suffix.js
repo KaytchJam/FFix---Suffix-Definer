@@ -72,9 +72,7 @@ function sortBy(val) {
     if (val == 0) {
         if (outputColl.length >= 2) {
             var reOrg = [];
-            for (var k = 0; k < outputColl.length; k++) {
-                reOrg.push(outputColl[k].firstChild);
-            }
+            for (var k = 0; k < outputColl.length; k++) { reOrg.push(outputColl[k].firstChild); }
             reOrg.sort(function(a, b){return b.innerText.length - a.innerText.length});
             for (q = 0; q < reOrg.length; q++) { document.getElementById('output-space').appendChild(reOrg[q].parentNode); }
         } 
@@ -88,9 +86,7 @@ function sortBy(val) {
     } else if (val == 2) {
         if (outputColl.length >= 2) {
             var deOrg = [];
-            for (var j = 0; j < outputColl.length; j++) {
-                deOrg.push(outputColl[j].lastChild);
-            }
+            for (var j = 0; j < outputColl.length; j++) { deOrg.push(outputColl[j].lastChild); }
             deOrg.sort(function(a, b){return b.innerText.length - a.innerText.length});
             for (h = 0; h < deOrg.length; h++) { document.getElementById('output-space').appendChild(deOrg[h].parentNode); }
         } 
