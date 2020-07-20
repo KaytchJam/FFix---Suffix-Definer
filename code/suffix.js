@@ -68,7 +68,7 @@ function reSort() {
 function sortBy(val) {
     var outputColl = document.getElementsByClassName('out-affix');
     // Might make this a case?
-    if (val == 0) {
+    if (val == 0) { // Sort by Suffix "Name" length
         if (outputColl.length >= 2) {
             var reOrg = [];
             for (var k = 0; k < outputColl.length; k++) {
@@ -77,13 +77,13 @@ function sortBy(val) {
             reOrg.sort(function(a, b){return b.innerText.length - a.innerText.length});
             for (q = 0; q < reOrg.length; q++) { document.getElementById('output-space').appendChild(reOrg[q].parentNode); }
         } 
-    } else if (val == 1) {
+    } else if (val == 1) { // Sort by alphabetical order
         var alphaOrg = [];
         for (w = 0; w < outputColl.length; w++) { alphaOrg.push(outputColl[w].firstChild); }
         alphaOrg.sort(function(a, b) {
             return a.innerText == b.innerText ? 0 : (a.innerText > b.innerText ? 1 : -1); });
           for (var t = 0; t < outputColl.length; t++) { document.getElementById('output-space').appendChild(alphaOrg[t].parentNode); }
-    } else if (val == 2) {
+    } else if (val == 2) { // Sort by definiton "size"
         if (outputColl.length >= 2) {
             var deOrg = [];
             for (var j = 0; j < outputColl.length; j++) { deOrg.push(outputColl[j].lastChild); }
