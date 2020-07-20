@@ -1,3 +1,4 @@
+// Initialize DOM Objects
 const affixInput = document.querySelector('.affix-input');
 const affixButton = document.querySelector('.affix-button');
 const sortInputs = document.getElementsByName('sort-type');
@@ -5,6 +6,7 @@ const sortAlpha = document.getElementById('sort-alpha');
 const sortLength = document.getElementById('sort-length');
 const sortDepth = document.getElementById('sort-depth');
 
+// Initialize Alphabetical Arrays
 var a_suf = new Array();
 var b_suf = new Array();
 var c_suf = new Array();
@@ -31,16 +33,20 @@ var x_suf = new Array();
 var y_suf = new Array();
 var z_suf = new Array();
 
+// Store Alphabetical Arrays
 const all_sufs = [a_suf, b_suf, c_suf, d_suf, e_suf, f_suf, g_suf, h_suf, i_suf, j_suf, k_suf, l_suf, m_suf, n_suf, o_suf, p_suf, r_suf, s_suf, t_suf, u_suf, v_suf, w_suf, x_suf, y_suf, z_suf];
 
+// Event Listeners
 affixButton.addEventListener('click', displaySuffix);
+
+// NOTE: onClick doesn't work on chrome extensions, so this was the alternative
 sortAlpha.addEventListener('click', reSort);
 sortLength.addEventListener('click', reSort);
 sortDepth.addEventListener('click', reSort);
 
+// Event for when a word is inputted / "Define" button clicked
 function displaySuffix(event) {
     event.preventDefault();
-
     if (document.getElementsByClassName('out-affix').length >= 1) {
         const removable_div = document.getElementsByClassName('out-affix');
         while (removable_div.length > 0) {
@@ -52,13 +58,16 @@ function displaySuffix(event) {
     reSort();
 }
 
+// Gets which "sort" option was chosen and reorganizes the suffixes
 function reSort() {
     sortVal = checkSort();
     sortBy(sortVal);
 }
 
+// Reogranizes the suffixes
 function sortBy(val) {
     var outputColl = document.getElementsByClassName('out-affix');
+    // Might make this a case?
     if (val == 0) {
         if (outputColl.length >= 2) {
             var reOrg = [];
@@ -72,29 +81,26 @@ function sortBy(val) {
         var alphaOrg = [];
         for (w = 0; w < outputColl.length; w++) { alphaOrg.push(outputColl[w].firstChild); }
         alphaOrg.sort(function(a, b) {
-            return a.innerText == b.innerText
-                    ? 0
-                    : (a.innerText > b.innerText ? 1 : -1);
-          });
+            return a.innerText == b.innerText ? 0 : (a.innerText > b.innerText ? 1 : -1); });
           for (var t = 0; t < outputColl.length; t++) { document.getElementById('output-space').appendChild(alphaOrg[t].parentNode); }
     } else if (val == 2) {
         if (outputColl.length >= 2) {
             var deOrg = [];
-            for (var j = 0; j < outputColl.length; j++) {
-                deOrg.push(outputColl[j].lastChild);
-            }
+            for (var j = 0; j < outputColl.length; j++) { deOrg.push(outputColl[j].lastChild); }
             deOrg.sort(function(a, b){return b.innerText.length - a.innerText.length});
             for (h = 0; h < deOrg.length; h++) { document.getElementById('output-space').appendChild(deOrg[h].parentNode); }
         } 
     }
 }
 
+// Finds which "sort" option is chosen
 function checkSort() {
     for (var i = 0; i < sortInputs.length; i++) {
         if (sortInputs[i].checked) { return sortInputs[i].value; }
     }
 }
 
+// Loops through all_sufs and then the array at the particular index all_sufs is at (all_sufs[i])
 function findSuffix(word, array) {
     for (var i = 0; i < array.length; i++) {
         var matches = 0;
@@ -110,9 +116,6 @@ function findSuffix(word, array) {
 
                 const suf_def = (array[i])[v].slice((array[i])[v].search("~") + 1, (array[i])[v].length);
 
-                //console.log(suf_name);
-                //console.log(suf_def);
-
                 const affixList = document.createElement('p');
                 const affixHead = document.createElement('p');
                 affixHead.innerText = "-" + suf_name;
@@ -123,25 +126,23 @@ function findSuffix(word, array) {
                 affixDiv.appendChild(affixHead);
                 affixDiv.appendChild(affixList);
 
-                //console.log(affixHead);
-                //console.log(affixList);
-                //console.log(document.body);
-
                 if (suf_name.length <= 2) { matches--; }
                 else if ((matches >= 1) && ([0, 4, 8, 14, 19].includes(i))) { matches--; }
             }
         }
         clear_suf(array[i]);
-        if (matches >= 2) { break; }
+        if (matches >= 2) { break; } // Just in case...
     }
 }
 
+// Clears array at particular index
 function clear_suf(array) {
     array.length = 0;
 }
 
 /* DICTIONARY OF SUFFIX DEFINITIONS */
-
+// "~" was used to seperate suffix "name" from suffix "definition
+// Inserts definition based on which index all_sufs is at
 function set_suf(num) {
     switch(num) {
     case 0:
