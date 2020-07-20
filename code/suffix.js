@@ -64,7 +64,7 @@ function reSort() {
     sortBy(sortVal);
 }
 
-// Reogranizes the suffixes
+// Reorganizes the suffixes
 function sortBy(val) {
     var outputColl = document.getElementsByClassName('out-affix');
     // Might make this a case?
