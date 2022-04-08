@@ -1,3 +1,6 @@
+
+![Ffix Suffix-Definer Banner](https://github.com/KaytchJam/FFix---Suffix-Definer/blob/master/Assets/FFix_Stock_1.png?raw=true)
+
 # FFix: Suffix-Definer
 A simple chrome extension that finds all suffixes inside a word and *defines said suffixes.*
 All suffixes are *divided alphabetically,* from A to Z. 
